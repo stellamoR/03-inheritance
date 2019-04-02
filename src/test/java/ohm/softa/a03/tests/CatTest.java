@@ -1,6 +1,6 @@
-package de.thro.inf.prg3.a03.tests;
+package ohm.softa.a03.tests;
 
-import de.thro.inf.prg3.a03.Cat;
+import ohm.softa.a03.Cat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
