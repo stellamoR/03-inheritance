@@ -29,9 +29,11 @@ class Cat {
 abstract class State {
 	#{static}logger: Logger
     -t: int
-    -duration: int
+    -final duration: int
     State tick(cat: Cat)
     abstract State successor(cat: Cat)
+    +getTime(): int
+    +getDuration(): int
 }
 
 class DigestingState extends State {
