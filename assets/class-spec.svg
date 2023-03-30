@@ -45,7 +45,7 @@ class HungryState extends State {
 class PlayfulState extends State {
 }
 
-class ohm.softa.a03.SleepingState extends State {
+class SleepingState extends State {
 }
 
 class DeathState extends State {
