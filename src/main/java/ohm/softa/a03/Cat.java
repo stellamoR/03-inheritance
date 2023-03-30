@@ -5,14 +5,18 @@ import org.apache.logging.log4j.Logger;
 
 import static ohm.softa.a03.Cat.State.*;
 
+//TODO Add logic for State = class instead of Enum;;
+//TODO Implement STATE-Class State.tick(), getTime(), getDuration();
+//TODO Implement successor-Method in Child-classes
+
 public class Cat {
-	private static final Logger logger = LogManager.getLogger();
+	//OLD private static final Logger logger = LogManager.getLogger();
 
 	// valid states
-	public enum State {SLEEPING, HUNGRY, DIGESTING, PLAYFUL, DEAD}
+	//OLD public enum State {SLEEPING, HUNGRY, DIGESTING, PLAYFUL, DEAD}
 
 	// initially, animals are sleeping
-	private State state = State.SLEEPING;
+	//OLD private State state = State.SLEEPING;
 
 	// state durations (set via constructor), ie. the number of ticks in each state
 	private final int sleep;
@@ -21,7 +25,7 @@ public class Cat {
 
 	private final String name;
 
-	private int time = 0;
+	//OLD private int time = 0;
 	private int timeDigesting = 0;
 
 	public Cat(String name, int sleep, int awake, int digest) {
@@ -31,6 +35,7 @@ public class Cat {
 		this.digest = digest;
 	}
 
+	/* OLD
 	public void tick(){
 		logger.info("tick()");
 		time = time + 1;
@@ -73,10 +78,14 @@ public class Cat {
 		logger.info(state.name());
 
 	}
+	*/
+
 
 	/**
 	 * This would be a user interaction: feed the cat to change its state!
 	 */
+
+	/*
 	public void feed(){
 		if (!isHungry())
 			throw new IllegalStateException("Can't stuff a cat...");
@@ -87,7 +96,7 @@ public class Cat {
 		state = State.DIGESTING;
 		timeDigesting = 0;
 	}
-
+*/
 	public boolean isAsleep() {
 		return state.equals(State.SLEEPING);
 	}
