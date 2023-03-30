@@ -44,6 +44,6 @@ _Hint: there's still one special case: when the cat was fed it's switching to th
 The test suite to ensure that the behavior is still the same is given, too.
 That's a classical refactoring situation.
 You want to replace an existing implementation by a _better_ one but the behavior shouldn't change.
-Now you might get an idea why test cases are important beside the fact that they ensure that you're implementation is working correctly when you do it the first time.
+Now you might get an idea why test cases are important beside the fact that they ensure that your implementation is working correctly when you do it the first time.
 
 ![classes](assets/class-spec.svg)
